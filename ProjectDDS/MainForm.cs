@@ -9,11 +9,16 @@ using System.Windows.Forms;
 
 namespace ProjectDDS
 {
-    public partial class Form1 : DevExpress.XtraBars.Ribbon.RibbonForm
+    public partial class MainForm : DevExpress.XtraBars.Ribbon.RibbonForm
     {
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
+        }
+
+        private void btn_LapHoaDon_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
         }
     }
 }
