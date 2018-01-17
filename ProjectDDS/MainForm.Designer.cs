@@ -41,7 +41,9 @@
             this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.defaultLookAndFeel = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
+            this.xtraTabbedMdiManager = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonControl
@@ -137,6 +139,10 @@
             // 
             this.defaultLookAndFeel.LookAndFeel.SkinName = "Office 2013 Dark Gray";
             // 
+            // xtraTabbedMdiManager
+            // 
+            this.xtraTabbedMdiManager.MdiParent = this;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -144,11 +150,13 @@
             this.ClientSize = new System.Drawing.Size(955, 584);
             this.Controls.Add(this.ribbonStatusBar1);
             this.Controls.Add(this.ribbonControl);
+            this.IsMdiContainer = true;
             this.Name = "MainForm";
             this.Ribbon = this.ribbonControl;
             this.StatusBar = this.ribbonStatusBar1;
             this.Text = "Quản lý cửa hàng DDS";
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -167,6 +175,7 @@
         private DevExpress.XtraBars.BarButtonItem btn_TiepNhanBaoHanh;
         private DevExpress.XtraBars.BarButtonItem barButtonItem1;
         private DevExpress.LookAndFeel.DefaultLookAndFeel defaultLookAndFeel;
+        private DevExpress.XtraTabbedMdi.XtraTabbedMdiManager xtraTabbedMdiManager;
     }
 }
 

@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 14.75, 16.125" name="QLCuaHangDDS">
+  <DataContextMoniker Name="/QLCuaHangDDSDataContext" />
+  <nestedChildShapes>
+    <classShape Id="e5f34407-5a8c-46ce-a15a-53052e068690" absoluteBounds="3.5, 0.75, 2, 1.7708968098958329">
+      <DataClassMoniker Name="/QLCuaHangDDSDataContext/CPU" />
+      <nestedChildShapes>
+        <elementListCompartment Id="eeb1e54f-604b-4e38-a09f-c3db4ce1963d" absoluteBounds="3.515, 1.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="dde99d9e-a979-470c-ae0c-92771da7e996" absoluteBounds="3.5, 13.125, 2, 1.0016910807291666">
+      <DataClassMoniker Name="/QLCuaHangDDSDataContext/XUNGNHIPRAM" />
+      <nestedChildShapes>
+        <elementListCompartment Id="574920ea-e1f1-4e2e-a4e1-d0e7c172dad1" absoluteBounds="3.515, 13.585, 1.9700000000000002, 0.44169108072916669" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7125c650-5d2f-43be-9957-3b9b3298b613" absoluteBounds="0.75, 3.25, 2, 1.0016910807291666">
+      <DataClassMoniker Name="/QLCuaHangDDSDataContext/CPUSOCKET" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d0aac3de-6e96-4466-bf64-607749199924" absoluteBounds="0.765, 3.71, 1.9700000000000002, 0.44169108072916669" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f19ef774-cb14-49ce-adbd-128ee81b2055" absoluteBounds="12.5, 10.375, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/QLCuaHangDDSDataContext/CHITIETHOADONBANHANG" />
+      <nestedChildShapes>
+        <elementListCompartment Id="707a4e79-af21-483d-9eff-c21ffb648741" absoluteBounds="12.515, 10.835, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="32cca5d6-f7af-4c1d-8a8e-f8baca1b4744" absoluteBounds="0.75, 5, 2, 1.0016910807291666">
+      <DataClassMoniker Name="/QLCuaHangDDSDataContext/HANGSXCPU" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9392ce4b-58e2-4336-9f58-496b2832a5ff" absoluteBounds="0.765, 5.46, 1.9700000000000002, 0.44169108072916669" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="90077e64-5b8b-4094-af47-39c14e7f552f" absoluteBounds="9.5, 6.375, 2, 2.3478011067708344">
+      <DataClassMoniker Name="/QLCuaHangDDSDataContext/HARDDISK" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5318b9c3-194d-4f95-9350-a86905970a68" absoluteBounds="9.515, 6.835, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f1a08143-6f4b-4414-9dae-f28a79096f00" absoluteBounds="6.75, 7, 2, 1.0016910807291666">
+      <DataClassMoniker Name="/QLCuaHangDDSDataContext/HARDDISKINTERFACE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fbb5612d-30c1-4ddd-849d-08c58b3b4f90" absoluteBounds="6.765, 7.46, 1.9700000000000002, 0.44169108072916669" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a543a0fa-543a-4a76-8630-8763d6ab7fe5" absoluteBounds="6.75, 10.25, 2, 1.0016910807291666">
+      <DataClassMoniker Name="/QLCuaHangDDSDataContext/HARDDISKPSTYPE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="05361dfd-aa2e-48b7-a94d-dd88de172c01" absoluteBounds="6.765, 10.71, 1.9700000000000002, 0.44169108072916669" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1d7c297d-c07b-4227-bcd0-dde6dd261689" absoluteBounds="6.75, 2, 2, 1.0016910807291666">
+      <DataClassMoniker Name="/QLCuaHangDDSDataContext/HARDDISKSIZE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="082426a2-c220-4b0b-a368-03cb37a92e0a" absoluteBounds="6.765, 2.46, 1.9700000000000002, 0.44169108072916669" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="694ffe4b-2fc0-40fc-bc8a-fe605a6ec1a9" absoluteBounds="9.75, 10.625, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/QLCuaHangDDSDataContext/HOADONBANHANG" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7942ef72-1745-468c-9a99-453ad45f8012" absoluteBounds="9.765, 11.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="45a01a81-a677-4f29-a2e3-ed187fa55554" absoluteBounds="3.5, 6.5, 2, 2.1554996744791657">
+      <DataClassMoniker Name="/QLCuaHangDDSDataContext/LAPTOP" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c1753698-1dc1-4393-9e50-90a45027e8fd" absoluteBounds="3.515, 6.96, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3dd5b71f-da54-48e7-9cb0-9df11ffd5eba" absoluteBounds="6.75, 12.75, 2, 1.0016910807291666">
+      <DataClassMoniker Name="/QLCuaHangDDSDataContext/LOAIHARDDISK" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6faa0291-3cd1-4704-9d27-9af384cbe3e1" absoluteBounds="6.765, 13.21, 1.9700000000000002, 0.44169108072916669" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="eeae9afe-6c00-4417-8ba6-4a9a3fbce0a7" absoluteBounds="0.75, 7.125, 2, 1.0016910807291657">
+      <DataClassMoniker Name="/QLCuaHangDDSDataContext/LOAIRAM" />
+      <nestedChildShapes>
+        <elementListCompartment Id="440eb26a-fed1-480c-b858-ac4c602d748a" absoluteBounds="0.765, 7.585, 1.9700000000000002, 0.44169108072916669" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2a603a4a-7149-4e9b-a425-75474ef6acc8" absoluteBounds="3.5, 3.5, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/QLCuaHangDDSDataContext/MAINBOARD" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c460338c-a34b-480d-a391-2d570818d005" absoluteBounds="3.515, 3.96, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="70cf5ca7-2ae2-440f-a357-657fc2790ecd" absoluteBounds="6.25, 4, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/QLCuaHangDDSDataContext/MAINBOARDDETAIL" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f2f1c6b7-b46c-4c13-ae9f-c68e37f90a3a" absoluteBounds="6.265, 4.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="887ff314-ffda-4a3e-a18f-ea55482f4c18" absoluteBounds="9.75, 3.125, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/QLCuaHangDDSDataContext/PSU" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8e6b92fc-f005-43eb-b9b0-68395f8afb2e" absoluteBounds="9.765, 3.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c6213785-0331-4980-8370-5691cce7fd7a" absoluteBounds="3.5, 9.5, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/QLCuaHangDDSDataContext/RAM" />
+      <nestedChildShapes>
+        <elementListCompartment Id="96ede759-a9b5-48cd-b02f-de37db5186c5" absoluteBounds="3.515, 9.96, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9a4892ea-9ba9-4da8-aafd-e4c5fc72a15f" absoluteBounds="9.75, 14.125, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/QLCuaHangDDSDataContext/VGA" />
+      <nestedChildShapes>
+        <elementListCompartment Id="de79bc3b-fb49-4a6a-94b8-be97b17c6b55" absoluteBounds="9.765, 14.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(1.75 : 3.25); (1.75 : 1.63544840494792); (3.5 : 1.63544840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QLCuaHangDDSDataContext/CPUSOCKET/CPUSOCKET_CPU" />
+      <nodes>
+        <classShapeMoniker Id="7125c650-5d2f-43be-9957-3b9b3298b613" />
+        <classShapeMoniker Id="e5f34407-5a8c-46ce-a15a-53052e068690" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 5); (3.125 : 4.625); (3.125 : 2.10942460742187); (3.5 : 2.10942460742187)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QLCuaHangDDSDataContext/HANGSXCPU/HANGSXCPU_CPU" />
+      <nodes>
+        <classShapeMoniker Id="32cca5d6-f7af-4c1d-8a8e-f8baca1b4744" />
+        <classShapeMoniker Id="e5f34407-5a8c-46ce-a15a-53052e068690" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.75 : 7.50084554036458); (9.5 : 7.50084554036458)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QLCuaHangDDSDataContext/HARDDISKINTERFACE/HARDDISKINTERFACE_HARDDISK" />
+      <nodes>
+        <classShapeMoniker Id="f1a08143-6f4b-4414-9dae-f28a79096f00" />
+        <classShapeMoniker Id="90077e64-5b8b-4094-af47-39c14e7f552f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.75 : 10.40625); (9.59375 : 10.40625); (9.59375 : 8.72280110677083)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QLCuaHangDDSDataContext/HARDDISKPSTYPE/HARDDISKPSTYPE_HARDDISK" />
+      <nodes>
+        <classShapeMoniker Id="a543a0fa-543a-4a76-8630-8763d6ab7fe5" />
+        <classShapeMoniker Id="90077e64-5b8b-4094-af47-39c14e7f552f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.75 : 2.50084554036458); (9.59375 : 2.50084554036458); (9.59375 : 6.375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QLCuaHangDDSDataContext/HARDDISKSIZE/HARDDISKSIZE_HARDDISK" />
+      <nodes>
+        <classShapeMoniker Id="1d7c297d-c07b-4227-bcd0-dde6dd261689" />
+        <classShapeMoniker Id="90077e64-5b8b-4094-af47-39c14e7f552f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.75 : 11.4142976888021); (12.5 : 11.4142976888021)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QLCuaHangDDSDataContext/HOADONBANHANG/HOADONBANHANG_CHITIETHOADONBANHANG" />
+      <nodes>
+        <classShapeMoniker Id="694ffe4b-2fc0-40fc-bc8a-fe605a6ec1a9" />
+        <classShapeMoniker Id="f19ef774-cb14-49ce-adbd-128ee81b2055" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.50076953160056 : 13.125); (3.125 : 12.7492304683994); (3.125 : 9.03203713601763); (3.50153746153846 : 8.65549967447917)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/QLCuaHangDDSDataContext/XUNGNHIPRAM/XUNGNHIPRAM_LAPTOP" />
+      <nodes>
+        <classShapeMoniker Id="dde99d9e-a979-470c-ae0c-92771da7e996" />
+        <classShapeMoniker Id="45a01a81-a677-4f29-a2e3-ed187fa55554" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.75 : 13.2508455403646); (9.5624975 : 13.2508455403646); (9.5624975 : 8.72280110677083)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QLCuaHangDDSDataContext/LOAIHARDDISK/LOAIHARDDISK_HARDDISK" />
+      <nodes>
+        <classShapeMoniker Id="3dd5b71f-da54-48e7-9cb0-9df11ffd5eba" />
+        <classShapeMoniker Id="90077e64-5b8b-4094-af47-39c14e7f552f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 7.62584554036458); (3.5 : 7.62584554036458)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QLCuaHangDDSDataContext/LOAIRAM/LOAIRAM_LAPTOP" />
+      <nodes>
+        <classShapeMoniker Id="eeae9afe-6c00-4417-8ba6-4a9a3fbce0a7" />
+        <classShapeMoniker Id="45a01a81-a677-4f29-a2e3-ed187fa55554" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 3.87584554036458); (3.04166666666667 : 3.87584554036458 : JumpStart); (3.20833333333333 : 3.87584554036458 : JumpEnd); (3.5 : 3.87584554036458)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QLCuaHangDDSDataContext/CPUSOCKET/CPUSOCKET_MAINBOARD" />
+      <nodes>
+        <classShapeMoniker Id="7125c650-5d2f-43be-9957-3b9b3298b613" />
+        <classShapeMoniker Id="2a603a4a-7149-4e9b-a425-75474ef6acc8" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 5.35900233723958); (3.19791666666667 : 5.35900233723958 : JumpStart); (3.36458333333333 : 5.35900233723958 : JumpEnd); (3.5 : 5.35900233723958)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QLCuaHangDDSDataContext/HANGSXCPU/HANGSXCPU_MAINBOARD" />
+      <nodes>
+        <classShapeMoniker Id="32cca5d6-f7af-4c1d-8a8e-f8baca1b4744" />
+        <classShapeMoniker Id="2a603a4a-7149-4e9b-a425-75474ef6acc8" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 7.15582026402244); (3.28125 : 6.62457026402244); (3.28125 : 4.61742393880208); (3.5 : 4.61742393880208)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QLCuaHangDDSDataContext/LOAIRAM/LOAIRAM_MAINBOARD" />
+      <nodes>
+        <classShapeMoniker Id="eeae9afe-6c00-4417-8ba6-4a9a3fbce0a7" />
+        <classShapeMoniker Id="2a603a4a-7149-4e9b-a425-75474ef6acc8" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 4.69314697265625); (6.25 : 4.69314697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QLCuaHangDDSDataContext/MAINBOARD/MAINBOARD_MAINBOARDDETAIL" />
+      <nodes>
+        <classShapeMoniker Id="2a603a4a-7149-4e9b-a425-75474ef6acc8" />
+        <classShapeMoniker Id="70cf5ca7-2ae2-440f-a357-657fc2790ecd" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 13.9704410807292); (6.46875 : 13.9704410807292); (6.46875 : 5.3862939453125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QLCuaHangDDSDataContext/XUNGNHIPRAM/XUNGNHIPRAM_MAINBOARDDETAIL" />
+      <nodes>
+        <classShapeMoniker Id="dde99d9e-a979-470c-ae0c-92771da7e996" />
+        <classShapeMoniker Id="70cf5ca7-2ae2-440f-a357-657fc2790ecd" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.75 : 8.12669108072917); (1.75 : 10.5777498372396); (3.04166666666667 : 10.5777498372396 : JumpStart); (3.20833333333333 : 10.5777498372396 : JumpEnd); (3.5 : 10.5777498372396)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QLCuaHangDDSDataContext/LOAIRAM/LOAIRAM_RAM" />
+      <nodes>
+        <classShapeMoniker Id="eeae9afe-6c00-4417-8ba6-4a9a3fbce0a7" />
+        <classShapeMoniker Id="c6213785-0331-4980-8370-5691cce7fd7a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.53163726580028 : 13.125); (4.53163726580028 : 11.6554996744792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/QLCuaHangDDSDataContext/XUNGNHIPRAM/XUNGNHIPRAM_RAM" />
+      <nodes>
+        <classShapeMoniker Id="dde99d9e-a979-470c-ae0c-92771da7e996" />
+        <classShapeMoniker Id="c6213785-0331-4980-8370-5691cce7fd7a" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

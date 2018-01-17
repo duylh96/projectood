@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QLCuaHangDDS" Class="QLCuaHangDDSDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-S11NQI2;Initial Catalog=QLCuaHangDDS;Integrated Security=True" SettingsObjectName="ProjectDDS.Properties.Settings" SettingsPropertyName="QLCuaHangDDSConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.CPU" Member="CPUs">
+    <Type Name="CPU">
+      <Column Name="Ten" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DonGia" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="TenHangSXCPU" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="TenSocket" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="MoTa" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="CPUSOCKET_CPU" Member="CPUSOCKET" ThisKey="TenSocket" OtherKey="TenSocket" Type="CPUSOCKET" IsForeignKey="true" />
+      <Association Name="HANGSXCPU_CPU" Member="HANGSXCPU" ThisKey="TenHangSXCPU" OtherKey="TenHangSXCPU" Type="HANGSXCPU" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.XUNGNHIPRAM" Member="XUNGNHIPRAMs">
+    <Type Name="XUNGNHIPRAM">
+      <Column Name="TenXungNhip" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="XUNGNHIPRAM_LAPTOP" Member="LAPTOPs" ThisKey="TenXungNhip" OtherKey="TenXungNhip" Type="LAPTOP" />
+      <Association Name="XUNGNHIPRAM_MAINBOARDDETAIL" Member="MAINBOARDDETAILs" ThisKey="TenXungNhip" OtherKey="TenXungNhip" Type="MAINBOARDDETAIL" />
+      <Association Name="XUNGNHIPRAM_RAM" Member="RAMs" ThisKey="TenXungNhip" OtherKey="TenXungNhip" Type="RAM" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CPUSOCKET" Member="CPUSOCKETs">
+    <Type Name="CPUSOCKET">
+      <Column Name="TenSocket" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="CPUSOCKET_CPU" Member="CPUs" ThisKey="TenSocket" OtherKey="TenSocket" Type="CPU" />
+      <Association Name="CPUSOCKET_MAINBOARD" Member="MAINBOARDs" ThisKey="TenSocket" OtherKey="TenSocket" Type="MAINBOARD" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CHITIETHOADONBANHANG" Member="CHITIETHOADONBANHANGs">
+    <Type Name="CHITIETHOADONBANHANG">
+      <Column Name="MaHD" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenMH" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="SoLuong" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DonGia" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="GiamGiaTrenMatHang" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="GiamGiaTrenThanhTien" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ThanhTien" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Association Name="HOADONBANHANG_CHITIETHOADONBANHANG" Member="HOADONBANHANG" ThisKey="MaHD" OtherKey="MaHD" Type="HOADONBANHANG" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HANGSXCPU" Member="HANGSXCPUs">
+    <Type Name="HANGSXCPU">
+      <Column Name="TenHangSXCPU" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="HANGSXCPU_CPU" Member="CPUs" ThisKey="TenHangSXCPU" OtherKey="TenHangSXCPU" Type="CPU" />
+      <Association Name="HANGSXCPU_MAINBOARD" Member="MAINBOARDs" ThisKey="TenHangSXCPU" OtherKey="TenHangSXCPU" Type="MAINBOARD" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HARDDISK" Member="HARDDISKs">
+    <Type Name="HARDDISK">
+      <Column Name="Ten" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenLoaiHD" Type="System.String" DbType="NVarChar(5)" CanBeNull="true" />
+      <Column Name="DonGia" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="HangSX" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Interface" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="TenSize" Type="System.String" DbType="NVarChar(5)" CanBeNull="true" />
+      <Column Name="TenLoaiHDPS" Type="System.String" DbType="NVarChar(5)" CanBeNull="true" />
+      <Column Name="MoTa" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="HARDDISKINTERFACE_HARDDISK" Member="HARDDISKINTERFACE" ThisKey="Interface" OtherKey="Interface" Type="HARDDISKINTERFACE" IsForeignKey="true" />
+      <Association Name="HARDDISKPSTYPE_HARDDISK" Member="HARDDISKPSTYPE" ThisKey="TenLoaiHDPS" OtherKey="TenLoaiHDPS" Type="HARDDISKPSTYPE" IsForeignKey="true" />
+      <Association Name="HARDDISKSIZE_HARDDISK" Member="HARDDISKSIZE" ThisKey="TenSize" OtherKey="TenSize" Type="HARDDISKSIZE" IsForeignKey="true" />
+      <Association Name="LOAIHARDDISK_HARDDISK" Member="LOAIHARDDISK" ThisKey="TenLoaiHD" OtherKey="TenLoaiHD" Type="LOAIHARDDISK" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HARDDISKINTERFACE" Member="HARDDISKINTERFACEs">
+    <Type Name="HARDDISKINTERFACE">
+      <Column Name="Interface" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="HARDDISKINTERFACE_HARDDISK" Member="HARDDISKs" ThisKey="Interface" OtherKey="Interface" Type="HARDDISK" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HARDDISKPSTYPE" Member="HARDDISKPSTYPEs">
+    <Type Name="HARDDISKPSTYPE">
+      <Column Name="TenLoaiHDPS" Type="System.String" DbType="NVarChar(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="HARDDISKPSTYPE_HARDDISK" Member="HARDDISKs" ThisKey="TenLoaiHDPS" OtherKey="TenLoaiHDPS" Type="HARDDISK" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HARDDISKSIZE" Member="HARDDISKSIZEs">
+    <Type Name="HARDDISKSIZE">
+      <Column Name="TenSize" Type="System.String" DbType="NVarChar(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="HARDDISKSIZE_HARDDISK" Member="HARDDISKs" ThisKey="TenSize" OtherKey="TenSize" Type="HARDDISK" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HOADONBANHANG" Member="HOADONBANHANGs">
+    <Type Name="HOADONBANHANG">
+      <Column Name="MaHD" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenKH" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NgayLap" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TongTien" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Association Name="HOADONBANHANG_CHITIETHOADONBANHANG" Member="CHITIETHOADONBANHANGs" ThisKey="MaHD" OtherKey="MaHD" Type="CHITIETHOADONBANHANG" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LAPTOP" Member="LAPTOPs">
+    <Type Name="LAPTOP">
+      <Column Name="Ten" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="HangSX" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DonGia" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="TenLoaiRam" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="TenXungNhip" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="supportM2" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="MoTa" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="XUNGNHIPRAM_LAPTOP" Member="XUNGNHIPRAM" ThisKey="TenXungNhip" OtherKey="TenXungNhip" Type="XUNGNHIPRAM" IsForeignKey="true" />
+      <Association Name="LOAIRAM_LAPTOP" Member="LOAIRAM" ThisKey="TenLoaiRam" OtherKey="TenLoaiRam" Type="LOAIRAM" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LOAIHARDDISK" Member="LOAIHARDDISKs">
+    <Type Name="LOAIHARDDISK">
+      <Column Name="TenLoaiHD" Type="System.String" DbType="NVarChar(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="LOAIHARDDISK_HARDDISK" Member="HARDDISKs" ThisKey="TenLoaiHD" OtherKey="TenLoaiHD" Type="HARDDISK" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LOAIRAM" Member="LOAIRAMs">
+    <Type Name="LOAIRAM">
+      <Column Name="TenLoaiRam" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="LOAIRAM_LAPTOP" Member="LAPTOPs" ThisKey="TenLoaiRam" OtherKey="TenLoaiRam" Type="LAPTOP" />
+      <Association Name="LOAIRAM_MAINBOARD" Member="MAINBOARDs" ThisKey="TenLoaiRam" OtherKey="TenLoaiRam" Type="MAINBOARD" />
+      <Association Name="LOAIRAM_RAM" Member="RAMs" ThisKey="TenLoaiRam" OtherKey="TenLoaiRam" Type="RAM" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MAINBOARD" Member="MAINBOARDs">
+    <Type Name="MAINBOARD">
+      <Column Name="Ten" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DonGia" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="TenHangSXCPU" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="TenSocket" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="TenLoaiRam" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="SupportM2" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="MoTa" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="MAINBOARD_MAINBOARDDETAIL" Member="MAINBOARDDETAILs" ThisKey="Ten" OtherKey="Ten" Type="MAINBOARDDETAIL" />
+      <Association Name="CPUSOCKET_MAINBOARD" Member="CPUSOCKET" ThisKey="TenSocket" OtherKey="TenSocket" Type="CPUSOCKET" IsForeignKey="true" />
+      <Association Name="HANGSXCPU_MAINBOARD" Member="HANGSXCPU" ThisKey="TenHangSXCPU" OtherKey="TenHangSXCPU" Type="HANGSXCPU" IsForeignKey="true" />
+      <Association Name="LOAIRAM_MAINBOARD" Member="LOAIRAM" ThisKey="TenLoaiRam" OtherKey="TenLoaiRam" Type="LOAIRAM" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MAINBOARDDETAILS" Member="MAINBOARDDETAILs">
+    <Type Name="MAINBOARDDETAIL">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Ten" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TenXungNhip" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Association Name="MAINBOARD_MAINBOARDDETAIL" Member="MAINBOARD" ThisKey="Ten" OtherKey="Ten" Type="MAINBOARD" IsForeignKey="true" />
+      <Association Name="XUNGNHIPRAM_MAINBOARDDETAIL" Member="XUNGNHIPRAM" ThisKey="TenXungNhip" OtherKey="TenXungNhip" Type="XUNGNHIPRAM" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PSU" Member="PSUs">
+    <Type Name="PSU">
+      <Column Name="Ten" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DonGia" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="HangSX" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Power" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MoTa" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RAM" Member="RAMs">
+    <Type Name="RAM">
+      <Column Name="Ten" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DonGia" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="HangSX" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TenLoaiRam" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="TenXungNhip" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="Size" Type="System.String" DbType="NVarChar(5)" CanBeNull="true" />
+      <Column Name="ForLapTop" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="LOAIRAM_RAM" Member="LOAIRAM" ThisKey="TenLoaiRam" OtherKey="TenLoaiRam" Type="LOAIRAM" IsForeignKey="true" />
+      <Association Name="XUNGNHIPRAM_RAM" Member="XUNGNHIPRAM" ThisKey="TenXungNhip" OtherKey="TenXungNhip" Type="XUNGNHIPRAM" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.VGA" Member="VGAs">
+    <Type Name="VGA">
+      <Column Name="Ten" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DonGia" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="HangSX" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Power" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MoTa" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
