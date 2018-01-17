@@ -32,7 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.btn_LapHoaDon = new DevExpress.XtraBars.BarButtonItem();
-            this.btn_TuVanTheoYeuCau = new DevExpress.XtraBars.BarButtonItem();
+            this.btn_TuVanLapTop = new DevExpress.XtraBars.BarButtonItem();
             this.btn_TiepNhanBaoHanh = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -42,6 +42,7 @@
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.defaultLookAndFeel = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
             this.xtraTabbedMdiManager = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
+            this.btn_TuVanPC = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager)).BeginInit();
             this.SuspendLayout();
@@ -52,11 +53,12 @@
             this.ribbonControl.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl.ExpandCollapseItem,
             this.btn_LapHoaDon,
-            this.btn_TuVanTheoYeuCau,
+            this.btn_TuVanLapTop,
             this.btn_TiepNhanBaoHanh,
-            this.barButtonItem1});
+            this.barButtonItem1,
+            this.btn_TuVanPC});
             this.ribbonControl.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl.MaxItemId = 5;
+            this.ribbonControl.MaxItemId = 6;
             this.ribbonControl.Name = "ribbonControl";
             this.ribbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
@@ -77,13 +79,14 @@
             this.btn_LapHoaDon.Name = "btn_LapHoaDon";
             this.btn_LapHoaDon.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_LapHoaDon_ItemClick);
             // 
-            // btn_TuVanTheoYeuCau
+            // btn_TuVanLapTop
             // 
-            this.btn_TuVanTheoYeuCau.Caption = "Tư vấn mua hàng";
-            this.btn_TuVanTheoYeuCau.Id = 2;
-            this.btn_TuVanTheoYeuCau.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_TuVanTheoYeuCau.ImageOptions.Image")));
-            this.btn_TuVanTheoYeuCau.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btn_TuVanTheoYeuCau.ImageOptions.LargeImage")));
-            this.btn_TuVanTheoYeuCau.Name = "btn_TuVanTheoYeuCau";
+            this.btn_TuVanLapTop.Caption = "Tư vấn Laptop";
+            this.btn_TuVanLapTop.Id = 2;
+            this.btn_TuVanLapTop.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_TuVanTheoYeuCau.ImageOptions.Image")));
+            this.btn_TuVanLapTop.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btn_TuVanTheoYeuCau.ImageOptions.LargeImage")));
+            this.btn_TuVanLapTop.Name = "btn_TuVanLapTop";
+            this.btn_TuVanLapTop.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_TuVanLapTop_ItemClick);
             // 
             // btn_TiepNhanBaoHanh
             // 
@@ -112,7 +115,8 @@
             // ribbonPageGroup1
             // 
             this.ribbonPageGroup1.ItemLinks.Add(this.btn_LapHoaDon);
-            this.ribbonPageGroup1.ItemLinks.Add(this.btn_TuVanTheoYeuCau);
+            this.ribbonPageGroup1.ItemLinks.Add(this.btn_TuVanLapTop);
+            this.ribbonPageGroup1.ItemLinks.Add(this.btn_TuVanPC);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
             this.ribbonPageGroup1.Text = "Bán hàng";
             // 
@@ -143,6 +147,15 @@
             // 
             this.xtraTabbedMdiManager.MdiParent = this;
             // 
+            // btn_TuVanPC
+            // 
+            this.btn_TuVanPC.Caption = "Tư vấn PC";
+            this.btn_TuVanPC.Id = 5;
+            this.btn_TuVanPC.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
+            this.btn_TuVanPC.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.LargeImage")));
+            this.btn_TuVanPC.Name = "btn_TuVanPC";
+            this.btn_TuVanPC.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btn_TuVanPC_ItemClick);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -171,11 +184,12 @@
         private DevExpress.XtraBars.Ribbon.RibbonStatusBar ribbonStatusBar1;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage2;
         private DevExpress.XtraBars.BarButtonItem btn_LapHoaDon;
-        private DevExpress.XtraBars.BarButtonItem btn_TuVanTheoYeuCau;
+        private DevExpress.XtraBars.BarButtonItem btn_TuVanLapTop;
         private DevExpress.XtraBars.BarButtonItem btn_TiepNhanBaoHanh;
         private DevExpress.XtraBars.BarButtonItem barButtonItem1;
         private DevExpress.LookAndFeel.DefaultLookAndFeel defaultLookAndFeel;
         private DevExpress.XtraTabbedMdi.XtraTabbedMdiManager xtraTabbedMdiManager;
+        private DevExpress.XtraBars.BarButtonItem btn_TuVanPC;
     }
 }
 

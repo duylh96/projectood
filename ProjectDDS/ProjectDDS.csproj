@@ -96,11 +96,25 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QLCuaHangDDS.dbml</DependentUpon>
     </Compile>
+    <Compile Include="DAO\RamDAO.cs" />
+    <Compile Include="DAO\TuVanPCDAO.cs" />
     <Compile Include="GUI\ManHinhLapHoaDon\LapHoaDon.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\ManHinhLapHoaDon\LapHoaDon.Designer.cs">
       <DependentUpon>LapHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ManHinhTuVanLapTop\TuVanLapTop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ManHinhTuVanLapTop\TuVanLapTop.Designer.cs">
+      <DependentUpon>TuVanLapTop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ManHinhTuVanPC\TuVanPC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ManHinhTuVanPC\TuVanPC.Designer.cs">
+      <DependentUpon>TuVanPC.cs</DependentUpon>
     </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -112,6 +126,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI\ManHinhLapHoaDon\LapHoaDon.resx">
       <DependentUpon>LapHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ManHinhTuVanLapTop\TuVanLapTop.resx">
+      <DependentUpon>TuVanLapTop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ManHinhTuVanPC\TuVanPC.resx">
+      <DependentUpon>TuVanPC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>

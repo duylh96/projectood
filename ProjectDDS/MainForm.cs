@@ -45,5 +45,31 @@ namespace ProjectDDS
             else
                 form.Activate();
         }
+
+        private void btn_TuVanLapTop_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form form = kiemtraform(typeof(GUI.ManHinhTuVanLapTop.TuVanLapTop));
+            if (form == null)
+            {
+                form = new GUI.ManHinhTuVanLapTop.TuVanLapTop();
+                form.MdiParent = this;
+                form.Show();
+            }
+            else
+                form.Activate();
+        }
+
+        private void btn_TuVanPC_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form form = kiemtraform(typeof(GUI.ManHinhTuVanPC.TuVanPC));
+            if (form == null)
+            {
+                form = new GUI.ManHinhTuVanPC.TuVanPC();
+                form.MdiParent = this;
+                form.Show();
+            }
+            else
+                form.Activate();
+        }
     }
 }

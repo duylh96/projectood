@@ -312,6 +312,8 @@
             this.cbb_LoaiSanPham.Name = "cbb_LoaiSanPham";
             this.cbb_LoaiSanPham.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cbb_LoaiSanPham.Properties.PopupFilterMode = DevExpress.XtraEditors.PopupFilterMode.Contains;
+            this.cbb_LoaiSanPham.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.Standard;
             this.cbb_LoaiSanPham.Size = new System.Drawing.Size(234, 20);
             this.cbb_LoaiSanPham.StyleController = this.layoutControl;
             this.cbb_LoaiSanPham.TabIndex = 6;
